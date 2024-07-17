@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz02</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+		*{
+			margin:0;
+			padding:0;
+		}
+		#container{
+			width:300px;
+			background-color: rgba(0,155,255,0.2);
+			border:1px solid black;
+			border-radius:10px;
+			margin:0 auto;
+		}
+		#container h1{
+			text-align:center;
+		}
+		#wrap{
+			margin-left:50px;
+			margin-top:5px;
+			margin-bottom:18px;
+		}
+		#wrap input{
+			font-family:"Nanum Pen Script";
+			font-size:17px;
+		}
+		#add{
+			width:20px;
+			height:20px;
+			background-image:url("../img/plus.png");
+			background-repeat: no-repeat;
+			position:relative;
+			top:6px;
+			display:inline-block;
+			cursor:pointer;
+		}
+		add img{
+			width:100%;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1>Todo List</h1>
+		<div id="wrap">
+			<input type="todo" size="25">
+			<div id="add"></div>
+		</div>
+		<div id="todo-list"></div>
+	</div>
+	<script>
+		const todo=document.querySelector("input")
+		const addButton=document.querySelector("#add")
+		const todoList=document.querySelector("#todo-list")
+
+		const addTodo=()=>{
+			if(todo.value.trim().length<=0){
+				alert("할 일을 입력하세요.")
+				return
+			}
+
+			const item=document.createElement("div")
+			const checkbox=document.createElement("input")
+			const text=document.createElement("span")
+			const delButton=document.createElement("div")
+			checkbox.type="checkbox"
+			text.textContent=todo.value
+			todo.value="";
+			text.style.fontFamily="Nanum Pen Script"
+			text.style.fontSize="20px"
+			item.style.margin="5px"
+			checkbox.style.marginLeft="10px"
+			checkbox.style.marginRight="10px"
+			checkbox.style.accentColor="black"
+			
+			item.style.borderBottom="1px solid skyblue"
+			delButton.style.cssText=`
+			width:17px;
+			height:17px;
+			display:inline-block;
+			background-size:100%;
+			float:right;
+			position:relative;
+			top:3px;
+			cursor:pointer
+			`
+			delButton.style.backgroundImage=`url("../img/minus.png")`
+			item.appendChild(checkbox)
+			item.appendChild(text)
+			item.appendChild(delButton)
+			todoList.appendChild(item)
+			
+			checkbox.addEventListener("change",(event)=>{
+				text.style.textDecoration=event.currentTarget.checked?"line-through":"none"
+			})
+			delButton.addEventListener("click",(event)=>{
+				todoList.removeChild(item)
+			})
+		}
+		addButton.addEventListener("click",addTodo)
+		todo.addEventListener("keyup",(event)=>{
+			const key=event.keyCode
+			if(key==13){
+				addTodo()
+			}
+		})
+	</script>
+</body>
+</html>

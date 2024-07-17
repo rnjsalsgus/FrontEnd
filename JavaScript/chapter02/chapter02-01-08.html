@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>chapter02-01-08</title>
+</head>
+<body>
+	<select multiple>
+		<option value="">떡볶이</option>
+		<option value="">순대</option>
+		<option value="">오뎅</option>
+		<option value="">튀김</option>
+	</select>
+	<p></p>
+	<script>
+		// multiple select 태그
+		const select=document.querySelector("select")
+		const p=document.querySelector("p")
+
+		select.addEventListener("change",(event)=>{
+			const options=event.currentTarget.options
+			const list=[]
+			for(const option of options){
+				if(option.selected){
+					list.push(option.textContent)
+				}
+			}
+			p.textContent=`${list.join(",")}`	
+		})
+	</script>
+</body>
+</html>

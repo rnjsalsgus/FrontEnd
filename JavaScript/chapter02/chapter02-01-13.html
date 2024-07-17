@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>chapter02-01-13</title>
+</head>
+<body>
+	<input type="checkbox">
+	<span>링크 활성화</span>
+	<br>
+	<a href="https://busan.koreaisacademy.com/">코리아 IT 아카데미</a>
+	<script>
+		// 체크 때만 링크 활성화하기
+		const checkbox=document.querySelector("checkbox")
+		const link=document.querySelector("a")
+		let status=false
+		checkbox.addEventListener("change",(event)=>{
+			status=event.currentTarget.checked
+		})
+		link.addEventListener("click",(event)=>{
+			// 링크 활성화가 해제된 상태에 실행
+			// status=false => !status=true
+			if(!status){
+				event.preventDefalut()
+			}
+		})
+
+	</script>
+</body>
+</html>

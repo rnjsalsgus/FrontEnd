@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>chapter01-01-01</title>
+	<script>
+		// DOMContentLoaded 이벤트는 웹 브라우저가 문서 객체를 모두 읽고 나서
+		// 실행하는 이벤트. 이 이벤트 안에서 javascript를 작성
+		// 이벤트 - (사건)변화가 일어나는 모든 것
+		// code develop pattern
+		// 유지 보수성과 확장성이 좋아야 좋은 코드
+		// 응집력을 높이고 결합도를 낮춘다.
+		// design pattern
+		// 문서가 모두 로드된 이벤트가 발생 했을 때 코드를 실행 - 옵저버 패턴
+		// addEventListener()
+		// 첫 번째 인자 - 이벤트이름
+		// 두 번째 인자 - 콜백 함수
+		document.addEventListener("DOMContentLoaded",
+		()=>{
+			const h101=document.querySelector("#h101")
+			h101.textContent="Hello node.js"
+		});
+	</script>
+</head>
+<body>
+	<h1 id="h101">Hello World!</h1>
+	<img src="" alt="">
+</body>
+</html>

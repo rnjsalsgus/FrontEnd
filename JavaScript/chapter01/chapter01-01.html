@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>chapter01-01</title>
+	<script>
+		/* 문서 객체 조작하기
+			html 페이지에 있는 태그 등을 html 언어에서는 요소
+			 javascript에서는 문서 객체라 한다. 따라서 문서 객체를 조작한다는 말은
+			 html요소들을 조작한다는 의미
+			html요소들을 javascript에서 사용하기 편한 객체 형태로 주는데
+			 이를 문서 객체 모델(DOM, Document Object Model)
+		*/
+
+		// DOMContecnLoared 이벤트
+		// head안에서 javascript를 사용할 때 DOMContentLoaded 이벤트를 사용
+		const h103=document.querySelector("#h103")
+		h103.textContent="Hello Node.js!"
+		// body 태그가 생성되기 이전에 head 태그 안의 script 태그에서
+		// body 태그를 조작하던 부분 h103은 생성되기 이전
+		// 기본적으로는 head태그 내부에 script 태그를 배치하면 body 태그에
+		// 있는 문서 객체에 접근할 수 없다.
+		// 1.모든 요소가 먼저 로드되는 body 가장 아랫부분에 script 태그를 사용
+		// 2.DOMContentLoaded 이벤트는 웹 브라우저가 문서 객체를 모두 읽고 나서
+		// 실행하는 이벤트. 이 이벤트 안에서 javascript를 작성
+
+	</script>
+</head>
+<body>
+	<h1 id="h101">Hello World!</h1>
+	<h1 id="h102">Hello World!</h1>
+	<h1 id="h103">Hello World!</h1>
+	<script>
+		const h101=document.querySelector("#h101")
+		h101.textContent="Hello Javascript!"
+		document.querySelector("#h102").
+		textContent="Hello DOM!"
+	</script>
+</body>
+</html>

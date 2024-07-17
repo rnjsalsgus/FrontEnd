@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz</title>
+	<style>
+		#container{
+			width:554px;
+			margin:0 auto;
+		}
+		#length{
+			border:1px solid gainsboro;
+			padding:5px;
+			margin-bottom:20px;
+		}
+		.inbox{
+			border:1px solid gainsboro;
+			width:250px;
+			height:80px;
+		}
+		#equal{
+			width:50px;
+			height:50px;
+			float:left;
+			text-align:center;
+			line-height:5px;
+			color: grey
+		}
+		input{
+			width:98%;
+			border:0px;
+			height:45px;
+			text-align:center;
+			font-weight:bold;
+			font-size:24px;
+		}
+		#cm{
+			width:98%;
+			border:0px;
+			height:45px;
+			text-align:center;
+			font-weight:bold;
+			line-height:45px;
+			font-size:24px;
+		}
+		.inbox div{
+			width:98%;
+			height:35px;
+			border-top:1px solid gainsboro;
+			line-height:30px;
+			padding-left:5px;	
+		}
+		#left-box{
+			float:left;
+		}
+		#right-box{
+			float:left;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="length">길이</div>
+		<div class="wrap">
+			<div class="inbox" id="left-box">
+				<input id="left-input" type="text">
+				<div>킬로미터</div>
+			</div>
+			<div id="equal">
+				<h2>=</h2>
+			</div>
+			<div class="inbox" id="right-box">
+				<div id="cm" type="text"></div>
+				<div>센티미터</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		const lInput=document.querySelector("#left-input")
+		const cmBox=document.querySelector("#cm")
+	
+		lInput.addEventListener("keyup",()=>{
+			const km=Number(lInput.value)
+			const cm=km*100000
+			if(isNaN(km)){
+				alert("숫자를 입력해주세요")
+				return;
+			}
+			cmBox.textContent=`${cm}`
+		})
+	</script>
+</body>
+</html>

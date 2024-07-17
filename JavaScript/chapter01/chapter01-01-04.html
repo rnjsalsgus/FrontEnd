@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>chapter01-01-04</title>
+</head>
+<body>
+	<h1 id="h101">Hello world!</h1>
+	<h1>Hot Reloading</h1>
+	<script>
+		/* 
+			 javascript의 특징
+			1.페이지 리로드(새로고침,f5)없이 html요소를 변경할 수 있다.
+		*/
+		const h101=document.querySelector("#h101")
+		setTimeout(()=>{
+			h101.textContent="Hello Javascript!"
+		},2000)
+		
+		/* 핫 리로딩(hot-reloading)
+			서버프로그램이 문서의 변경점을 감지해서 자동으로 페이지 새로고침 한다.
+		*/
+	</script>
+</body>
+</html>

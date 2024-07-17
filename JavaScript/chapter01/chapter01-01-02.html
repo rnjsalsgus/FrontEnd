@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>chapter01-01-02</title>
+</head>
+<body>
+	<h1></h1>
+	<h1></h1>
+	<h1></h1>
+	<h1></h1>
+	<script>
+		// querySelector() 메소드는 요소를 하나만 추출
+		const header=document.querySelector("h1")
+		// 내용을 변경
+		header.textContent="HEADERS"
+		// 스타일 변경
+		header.style.color="red"
+		header.style.backgroundColor="#ccc"
+		header.style.padding="10px"
+		
+		// querySelectorAll() 메소드 - 문서 객체를 여러개 추출
+		// 배열 형태로 리턴
+		const headers=document.querySelectorAll("h1")
+		headers.forEach((header)=>{
+			header.textContent="HEADERS"
+			header.style.color="red"
+			header.style.backgroundColor="#ccc"
+			header.style.padding="10px"
+		})
+
+		// 문서객체 가져오기
+		// 기본 문서 객체 가져오기
+		// head - document.head
+		// body - document.body
+		// title - document.title
+		// 문서에 만든 다른 요소들은 별도의 메소드를 사용해서 접근해야 한다.
+		// document.querySelector(선택자)
+		// document.querySelectorAll(선택자)
+		// 이름 / 선택자 형태 / 설명
+		// 태그 선택자 / 태그 / 특정 태그를 가진 요소를 추출
+		// 아이디 선택자 / #아이디 / 특정 id속성을 가진 요소를 추출
+		// 클래스 선택자 / .클래스 / 특정 class속성을 가진 요소를 추출
+		// 속성 선택자 / [속성=값] / 특정 속성 값을 갖고 있는 요소를 추출
+		// 후손 선택자 / A B / A태그 아래에 있는 B를 선택
+	</script>
+</body>
+</html>

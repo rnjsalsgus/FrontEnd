@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>chapter02-01-01</title>
+</head>
+<body>
+	<h1></h1>
+	<textarea></textarea>
+	<script>
+		/* 키보드 이벤트
+			 이벤트 / 설명
+			keydown / 키가 눌릴 때 실행, 키보드는 꾹 누르고 있을 때,
+			 입력될 때 실행
+			keyup / 키보드에서 키가 떨어질 때 실행
+			keypress / 키가 입력되었을 때 실행
+		*/
+
+		/* 남은 글자 수 출력 */
+		const textarea=document.querySelector("textarea")
+		const h1=document.querySelector("h1")
+		
+		textarea.addEventListener("keyup",()=>{
+			const length=textarea.value.length
+			h1.textContent=`글자 수:${length}`
+		})
+	</script>
+</body>
+</html>
