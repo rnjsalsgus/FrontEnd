@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>store-detail</title>
+	<link rel="stylesheet" href="../css/store-detail.css">
+	<script src="../script/store-detail.js"></script>
+</head>
+<body>
+	<header>
+		<a href="index.html"><div id="logo"></div></a>
+		<h1 id="header-h1"><a href="index.html">CINEMA</a></h1>
+		<div id="info">
+			<a href="login.html">
+				<div class="info-wrap">
+					<div class="info-img" id="info-login-img"></div>
+					<span class="info-text">로그인</span>
+				</div>
+			</a>
+			<a href="join.html">
+				<div class="info-wrap">
+					<div class="info-img" id="info-join-img"></div>
+					<span id="join-text" class="info-text">회원가입</span>
+				</div>
+			</a>
+		</div>
+	</header>
+	<nav id="main-nav">
+		<ul class="main">
+			<li><a class="menu" href="reserve.html">예매</a>
+				<ul class="sub">
+					<li><a href="reserve.html">빠른 예매</a></li>
+					<li><a href="#">상영시간표</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="movie.html">영화</a>
+				<ul class="sub">
+					<li><a href="movie.html">홈</a></li>
+					<li><a href="#">현재 상영작</a></li>
+					<li><a href="#">상영 예정작</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="store.html">스토어</a>
+				<ul class="sub">
+					<li><a href="store.html">콤보</a></li>
+					<li><a href="#">팝콘</a></li>
+					<li><a href="#">음료</a></li>
+					<li><a href="#">스낵</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="notice.html">고객센터</a>
+				<ul class="sub">
+					<li><a href="notice.html">고객센터 메인</a></li>
+					<li><a href="QnA.html">자주찾는 질문</a></li>
+					<li><a href="rental.html">단체 관람/대관 문의</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<section id="store-container">
+		<h1 id="store-h1">STORE</h1>
+		<hr class="store-border">
+		<nav id="store">
+			<ul id="store-menu">
+				<li><a href="store.html">콤보</a></li>
+				<li><a href="#">팝콘</a></li>
+				<li><a href="#">음료</a></li>
+				<li><a href="#">스낵</a></li>
+			</ul>
+		</nav>
+		<h2>더블 콤보</h2>
+		<div id="menu-wrap">
+			<div id="menu-img"></div>
+			<div id="menu-detail">
+				<div id="price">
+					<h2>13,000원</h2>
+				</div>
+				<dl id="detail">
+					<dt>상품구성</dt>
+					<dd>팝콘(M)2+탄산(M)2</dd>
+					<dt>유효기간</dt>
+					<dd>구매일로부터 6개월 이내</dd>
+					<dt>원산지</dt>
+					<dd>팝콘(옥수수:미국산)</dd>
+					<dt>상품교환</dt>
+					<dd><a href="#">사용가능 영화관보기</a></dd>
+				</dl>
+				<div id="number">
+					<button id="minus-btn">-</button>
+					<div>
+					<span id="quantity">1</span>
+					</div>
+					<button id="plus-btn">+</button>
+				</div>
+				<div id="basket-wrap">
+					<div id="basket"></div>
+					<div class="basket-box">선물하기</div>
+					<div class="basket-box">구매하기</div>
+				</div>
+			</div>
+		</div>
+		<div id="menu-info">
+			<p>둘이서 각자 취향대로 골라 즐기는 1인 1팝콘&콜라!</p>
+			<p>더블콤보!</p>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,203 @@
+@font-face {
+	font-family:"Dancing Script";
+	src: url(../font/DancingScript-VariableFont_wght.ttf);
+}
+*{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-style-type:none;
+}
+a{
+	color:black;
+	text-decoration:none;
+}
+
+/* header */
+
+header{
+	width:100%;
+	height:80px;
+	display:flex;
+}
+#logo{
+	width:200px;
+	height:100px;
+	background-image:url("../img/cinema.png");
+	background-repeat:no-repeat;
+	background-size:200px 80px;
+	background-position:0px 10px;
+}
+#header-h1{
+	font-family: "Dancing Script";
+	font-size:50px;
+	height:80px;
+	line-height:80px;
+	margin:0 auto;
+	margin-top:10px;
+}
+#info{
+	width:200px;
+	height:80px;
+	display:flex;
+}
+.info-wrap{
+	width:100px;
+}
+.info-img{
+	width:40px;
+	height:40px;
+	margin:0 auto;
+	margin-top:20px;
+}
+#info-login-img{
+	background-image:url("../img/login.png");
+	background-repeat:no-repeat;
+	background-size: contain;
+}
+#info-join-img{
+	background-image:url("../img/join.png");
+	background-repeat:no-repeat;
+	background-size: contain;
+}
+.info-text{
+	font-size:14px;
+	margin-left:30px;
+}
+#join-text{
+	margin-left:25px;
+}
+
+
+/* nav */
+nav{
+	width:100%;
+	height:60px;
+	margin:20px 0px;
+	margin-bottom:70px;
+	position:relative;
+	z-index:9;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.main{
+	width:60%;
+	min-width:650px;
+	height:60px;
+	display:flex;
+	justify-content:space-between;
+	line-height:60px;
+	margin:0 auto;
+}
+.main li{
+	width:100%;
+	margin:0 auto;
+	text-align: center;
+}
+.sub{
+	width:100%;
+	height:0;
+	overflow:hidden;
+	background-color:white;
+}
+.sub li{
+	height:40px;
+	line-height:40px;
+}
+.main:hover .sub{
+	height:170px;
+}
+
+.main li:hover .menu{
+	color:red;
+	font-weight:bold;
+}
+.sub>li:hover{
+	text-decoration:underline;
+	font-weight:bold;
+	background-color:#e9e5e5;
+}
+/* container */
+#container{
+	width:1200px;
+	margin:0 auto;
+}
+/* aside */
+aside{
+	float:left;
+	width:200px;
+	margin-right:20px;
+}
+#left-menu{
+	width:100%;
+	font-weight:bold;
+	text-align:center;
+}
+#left-menu li{
+	width:100%;
+	height:40px;
+	line-height:40px;
+}
+.left-img{
+	margin-top:20px;
+	width:100%;
+	height:400px;
+	background-image:url(../img/aside_banner.png);
+	background-size:100% 400px;
+}
+#left-menu>li:hover{
+	background-color: #fb4357;
+}
+#left-menu>li:hover a{
+	color:white
+}
+
+#rental{
+	width:800px;
+	float:left;
+}
+#rental-text{
+	color:grey;
+	margin-bottom:25px;
+	cursor:default;
+}
+#rental-text h4{
+	margin-bottom:5px;
+}
+fieldset{
+	margin-top:30px;
+	border:none;
+	border-top:1px solid rgb(185, 177, 177);
+	border-bottom:1px solid rgb(185, 177, 177);
+	cursor:default;
+}
+fieldset>div{
+	height:55px;
+	border-bottom:1px solid rgb(185, 177, 177);
+	line-height:55px;
+}
+.text{
+	width:100px;
+	float:left;
+	font-size:14px;
+	color:#333
+}
+#personel{
+	margin-left:26px;
+}
+#phone{
+	margin-left:80px;
+	margin-right:18px;
+	
+}
+select{
+	height:25px;
+}
+div input{
+	height:25px;
+	
+}
+fieldset>div:last-child{
+	border:none;
+}

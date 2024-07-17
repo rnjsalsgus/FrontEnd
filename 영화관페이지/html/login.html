@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>log-in</title>
+	<link rel="stylesheet" href="../css/login.css">
+	<script src="../script/login.js"></script>
+</head>
+<body>
+	<header>
+		<a href="index.html"><div id="logo"></div></a>
+		<h1 id="header-h1"><a href="index.html">CINEMA</a></h1>
+		<div id="info">
+			<a href="login.html">
+				<div class="info-wrap">
+					<div class="info-img" id="info-login-img"></div>
+					<span class="info-text">로그인</span>
+				</div>
+			</a>
+			<a href="join.html">
+				<div class="info-wrap">
+					<div class="info-img" id="info-join-img"></div>
+					<span id="join-text" class="info-text">회원가입</span>
+				</div>
+			</a>
+		</div>
+	</header>
+	<nav>
+		<ul class="main">
+			<li><a class="menu" href="reserve.html">예매</a>
+				<ul class="sub">
+					<li><a href="reserve.html">빠른 예매</a></li>
+					<li><a href="#">상영시간표</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="movie.html">영화</a>
+				<ul class="sub">
+					<li><a href="movie.html">홈</a></li>
+					<li><a href="#">현재 상영작</a></li>
+					<li><a href="#">상영 예정작</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="store.html">스토어</a>
+				<ul class="sub">
+					<li><a href="store.html">콤보</a></li>
+					<li><a href="#">팝콘</a></li>
+					<li><a href="#">음료</a></li>
+					<li><a href="#">스낵</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="notice.html">고객센터</a>
+				<ul class="sub">
+					<li><a href="notice.html">고객센터 메인</a></li>
+					<li><a href="QnA.html">자주찾는 질문</a></li>
+					<li><a href="rental.html">단체 관람/대관 문의</a></li>
+				</ul>
+			</li>
+		</ul>
+
+	</nav>
+	<section id="container">
+		<div id="categori-wrap">
+			<ul id="categori">
+				<li class="on"><span>회원</span></li>
+				<li><span>비회원</span></li>
+				<li><span>소셜 로그인</span></li>
+			</ul>
+		</div>
+		<table>
+			<tr id="member">
+				<td>
+					<form>
+						<input type="text" id="id" placeholder="  아이디 또는 이메일을 입력해 주세요.">
+						<input type="password" id="password" placeholder="  비밀번호를 입력해주세요">
+						<div id="login">로그인</div>
+						<input type="checkbox" id="save"><label for="save"><small>아이디 저장</small></label>
+						<ul id="reserve-info">
+							<li><small>회원가입</small></li>
+							<li><small>아이디 찾기</small></li>
+							<li><small>비밀번호 찾기</small></li>
+						</ul>
+					</form>
+				</td>
+				<td>
+					<div id="member-img"></div>
+				</td>
+			</tr>
+			<tr id=non-member>
+				<td>
+					<form id="second-form">
+						<legend>비회원 로그인</legend>
+						<div id="non-wrap">
+							<span>이름</span><input type="text" placeholder="  이름을 입력해주세요.">
+						</div>
+						<div id="non-wrap">
+							<span>휴대폰 번호</span><input type="text" placeholder="  휴대폰 번호(-생략)을 입력해주세요.">
+						</div>
+						<div id="non-wrap">
+							<span>생년월일</span><input type="date" value="2024-05-24">
+						</div>
+						<div id="non-wrap">
+							<span>예매 비밀번호</span><input type="text" placeholder="  예매 비밀번호 (4자리)를 입력해 주세요.">
+						</div>
+						<div id="non-wrap">
+							<span>예매 비밀번호 확인</span><input type="text" placeholder="  예매 비밀번호 (4자리)를 재입력해 주세요.">
+						</div>
+					</form>
+				</td>
+				<td>
+					<div id="non-member-img"></div>
+				</td>
+			</tr>
+			<tr id="social">
+				<td>
+					<form>
+						<a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/" target="_blank">
+							<div class="social-wrap" id="naver">
+								<div class="social-logo">
+									<div id="naver-logo"></div>
+								</div>
+								<div class="social-text">
+									<p>네이버 계정으로 로그인</p>
+								</div>
+							</div>
+						</a>
+						<a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fproxy%3DeasyXDM_Kakao_rd70jeddbr_provider%26ka%3Dsdk%252F1.43.4%2520os%252Fjavascript%2520sdk_type%252Fjavascript%2520lang%252Fko-KR%2520device%252FWin32%2520origin%252Fhttps%25253A%25252F%25252Fwww.lottecinema.co.kr%26origin%3Dhttps%253A%252F%252Fwww.lottecinema.co.kr%26response_type%3Dcode%26redirect_uri%3Dkakaojs%26state%3D50aualdzxn6mxbkb7b9etk%26through_account%3Dtrue%26client_id%3Dc1e34a4fce5ae0f410f9ac6045915369&talk_login=hidden#login" target="_blank">
+							<div class="social-wrap" id="cacao">
+								<div class="social-logo">
+									<div id=cacao-logo></div>
+								</div>
+								<div class="social-text">
+									<p>카카오 계정으로 로그인</p>
+								</div>
+							</div>
+						</a>
+						<ul id="social-info">
+							<li><small>회원가입</small></li>
+							<li><small>아이디 찾기</small></li>
+							<li><small>비밀번호 찾기</small></li>
+						</ul>
+					</form>
+				</td>
+				<td>
+					<div id="social-img"></div>
+				</td>
+			</tr>
+		</table>
+	</section>
+</body>
+</html>

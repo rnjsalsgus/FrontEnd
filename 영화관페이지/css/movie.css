@@ -1,0 +1,286 @@
+@font-face {
+	font-family:"Dancing Script";
+	src: url(../font/DancingScript-VariableFont_wght.ttf);
+}
+*{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-style-type:none;
+}
+a{
+	color:black;
+	text-decoration:none;
+}
+
+/* header */
+
+header{
+	width:100%;
+	height:80px;
+	display:flex;
+}
+#logo{
+	width:200px;
+	height:100px;
+	background-image:url("../img/cinema.png");
+	background-repeat:no-repeat;
+	background-size:200px 80px;
+	background-position:0px 10px;
+}
+#header-h1{
+	font-family: "Dancing Script";
+	font-size:50px;
+	height:80px;
+	line-height:80px;
+	margin:0 auto;
+	margin-top:10px;
+}
+
+#info{
+	width:200px;
+	height:80px;
+	display:flex;
+}
+.info-wrap{
+	width:100px;
+}
+.info-img{
+	width:40px;
+	height:40px;
+	margin:0 auto;
+	margin-top:20px;
+}
+#info-login-img{
+	background-image:url("../img/login.png");
+	background-repeat:no-repeat;
+	background-size: contain;
+}
+#info-join-img{
+	background-image:url("../img/join.png");
+	background-repeat:no-repeat;
+	background-size: contain;
+}
+.info-text{
+	font-size:14px;
+	margin-left:30px;
+}
+#join-text{
+	margin-left:25px;
+}
+
+
+/* nav */
+nav{
+	width:100%;
+	height:60px;
+	margin:20px 0px;
+	margin-bottom:70px;
+	position:relative;
+	z-index:9;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.main{
+	width:60%;
+	min-width:650px;
+	height:60px;
+	display:flex;
+	justify-content:space-between;
+	line-height:60px;
+	margin:0 auto;
+}
+.main li{
+	width:100%;
+	margin:0 auto;
+	text-align: center;
+}
+.sub{
+	width:100%;
+	height:0;
+	overflow:hidden;
+	background-color:white;
+}
+.sub li{
+	height:40px;
+	line-height:40px;
+}
+.main:hover .sub{
+	height:170px;
+}
+
+.main li:hover .menu{
+	color:red;
+	font-weight:bold;
+}
+.sub>li:hover{
+	text-decoration:underline;
+	font-weight:bold;
+	background-color:#e9e5e5;
+}
+/* gallery */
+
+#gallery{
+	width:100%;
+	height:500px;
+	position:relative;
+	margin-bottom:20px;
+	position: relative;
+	overflow:hidden;
+}
+#inwrap{
+	width:500%;
+	height:500px;
+}
+.inbox{
+	width:100vw;
+	height:774px;
+	float:left;
+}
+#prev{
+	width:100px;
+	height:100px;
+	color:white;
+	text-align:center;
+	font-weight:bold;
+	line-height:100px;
+	font-size:40px;
+	position:absolute;
+	top:200px;
+	cursor:pointer;
+	user-select:none;
+}
+#gallery-wrap{
+	width:100vw;
+	height:500px;
+	color:white;
+}
+#next{
+	width:100px;
+	height:100px;
+	text-align:center;
+	font-weight:bold;
+	line-height:100px;
+	font-size:40px;
+	position:absolute;
+	top:200px;
+	right:0;
+	cursor:pointer;
+	user-select:none;
+}
+#current-movie{
+	width:1000px;
+	height:370px;
+	margin:0 auto;
+}
+#movie{
+	width:1000px;
+	height:370px;
+	margin:0 auto;
+	margin-top:60px;
+}
+.movie-container{
+	display:flex;
+	justify-content:space-between;
+	margin-top:20px;
+}
+h3 span{
+	color:red;
+}
+.movie-wrap{
+	width:230px;
+	height:350px;
+	border-radius:10px;
+}
+.movie-img{
+	width:230px;
+	height:250px;
+	border-radius:10px;
+}
+.reserve{
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.7);
+	border-radius:10px;
+	display:none;
+}
+.reserve-box{
+	width:150px;
+	height:25px;
+	text-align:center;
+	font-weight:bold;
+	line-height:25px;
+	border:2px solid white;
+	border-radius:10px;
+	color:white;
+	position:relative;
+	left:35px;
+	top:75px;
+	margin-bottom:10px;
+	cursor:pointer;
+}
+.movie-text{
+	width:230px;
+	height:100px;
+	padding:20px;
+	
+}
+.grade{
+	width:30px;
+	height:30px;
+	float:left;
+	border-radius:5px;
+}
+.grade-15{
+	background-image:url("../img/grade_15.png");
+	background-repeat:no-repeat;
+	background-size:30px 30px;
+}
+.grade-12{
+	background-image:url("../img/grade_12.png");
+	background-repeat:no-repeat;
+	background-size:30px 30px;
+}
+.grade-all{
+	background-image:url("../img/grade_all.png");
+	background-repeat:no-repeat;
+	background-size:30px 30px;
+}
+.title{
+	float:left;
+	font-weight:bold;
+	font-size:14px;
+	margin-left:20px;
+	
+}
+.runtime{
+	width:100px;
+	height:20px;
+	clear:both;
+	margin-top:10px;
+	margin-left:45px;
+	
+}
+.time-img{
+	width:15px;
+	height:15px;
+	background-image:url("../img/icon_clock_black.svg");
+	background-size:15px 15px;
+	float:left;
+}
+.minute{
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	margin-left:5px;
+	line-height:12px;
+}
+#banner{
+	width:1000px;
+	height:200px;
+	background-image:url("../img/movie-img5.jpg");
+	background-size:1000px 200px;
+	background-repeat:no-repeat;
+	padding-bottom:10px;
+}

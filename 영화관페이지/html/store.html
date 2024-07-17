@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>store</title>
+	<link rel="stylesheet" href="../css/store.css">
+	<script src="../script/store.js"></script>
+</head>
+
+<body>
+	<header>
+		<a href="index.html"><div id="logo"></div></a>
+		<h1 id="header-h1"><a href="index.html">CINEMA</a></h1>
+		<div id="info">
+			<a href="login.html">
+				<div class="info-wrap">
+					<div class="info-img" id="info-login-img"></div>
+					<span class="info-text">로그인</span>
+				</div>
+			</a>
+			<a href="join.html">
+				<div class="info-wrap">
+					<div class="info-img" id="info-join-img"></div>
+					<span id="join-text" class="info-text">회원가입</span>
+				</div>
+			</a>
+		</div>
+	</header>
+	<nav id="main-nav">
+		<ul class="main">
+			<li><a class="menu" href="reserve.html">예매</a>
+				<ul class="sub">
+					<li><a href="reserve.html">빠른 예매</a></li>
+					<li><a href="#">상영시간표</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="movie.html">영화</a>
+				<ul class="sub">
+					<li><a href="movie.html">홈</a></li>
+					<li><a href="#">현재 상영작</a></li>
+					<li><a href="#">상영 예정작</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="store.html">스토어</a>
+				<ul class="sub">
+					<li><a href="store.html">콤보</a></li>
+					<li><a href="#">팝콘</a></li>
+					<li><a href="#">음료</a></li>
+					<li><a href="#">스낵</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="notice.html">고객센터</a>
+				<ul class="sub">
+					<li><a href="notice.html">고객센터 메인</a></li>
+					<li><a href="QnA.html">자주찾는 질문</a></li>
+					<li><a href="rental.html">단체 관람/대관 문의</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<section id="store-container">
+		<h1 id="store-h1">STORE</h1>
+		<hr class="store-border">
+		<nav id="store">
+			<ul id="store-menu">
+				<li>콤보</li>
+				<li>팝콘</li>
+				<li>음료</li>
+				<li>스낵</li>
+			</ul>
+		</nav>
+		<div class="container" id="combo-container">
+			<h2>콤보</h2>
+			<hr>
+			<div class="store-wrap">
+				<div class="menu-container">
+					<div class="menu-wrap">
+						<div class="menu-img" id="combo-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="store-detail.html">
+							<div class="menu-text">
+								<h3>더블콤보</h3>
+								<h4>팝콘(M)2+탄산음료(M)2</h4>
+							</div>
+							<div class="price">13,000원</div>
+						</a>
+					</div>
+					<div class="menu-wrap">
+						<div class="menu-img" id="combo-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>라지콤보</h3>
+								<h4>팝콘(L)2+탄산음료(L)2</h4>
+							</div>
+							<div class="price">15,000원</div>
+						</a>
+					</div>
+					<div class="menu-wrap">
+						<div class="menu-img" id="combo-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>스몰세트</h3>
+								<h4>팝콘(M)1+탄산음료(M)1</h4>
+							</div>
+							<div class="price">7,000원</div>
+						</a>
+					</div>
+				</div>
+				<div class="menu-container">
+					<div class="menu-wrap">
+						<div class="menu-img" id="combo-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>스위트콤보</h3>
+								<h4>팝콘(L)2+탄산음료(M)2</h4>
+							</div>
+							<div class="price">10,000원</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="popcorn-container">
+			<h2>팝콘</h2>
+			<hr>
+			<div class="store-wrap">
+				<div class="menu-container">
+					<div class="menu-wrap">
+						<div class="menu-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+							<h3>더블치즈팝콘(M)</h3>
+							<h4>더블치즈팝콘(M)</h4>
+							</div>
+							<div class="price">6,000원</div>
+						</a>
+					</div>
+					<div class="menu-wrap">
+						<div class="menu-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>바질어니언팝콘(M)</h3>
+								<h4>바질어니언팝콘(M)</h4>
+							</div>
+							<div class="price">6,000원</div>
+						</a>
+					</div>
+					<div class="menu-wrap">
+						<div class="menu-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>달콤팝콘(M)</h3>
+								<h4>달콤팝콘(M)</h4>
+							</div>
+							<div class="price">6,000원</div>
+						</a>
+					</div>
+				</div>
+				<div class="menu-container">
+					<div class="menu-wrap">
+						<div class="menu-img" id="combo-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>고소팝콘(M)</h3>
+								<h4>고소팝콘(M)</h4>
+							</div>
+							<div class="price">5,000원</div>
+						</a>
+					</div>
+					<div class="menu-wrap">
+						<div class="menu-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>더블치즈팝콘(L)</h3>
+								<h4>더블치즈팝콘(L)</h4>
+							</div>
+							<div class="price">6,500원</div>
+						</a>
+					</div>
+					<div class="menu-wrap">
+						<div class="menu-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>바질어니언팝콘(L)</h3>
+								<h4>바질어니언팝콘(L)</h4>
+							</div>
+							<div class="price">6,500원</div>
+						</a>
+					</div>
+				</div>
+				<div class="menu-container">
+					<div class="menu-wrap">
+						<div class="menu-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>달콤팝콘(L)</h3>
+								<h4>달콤팝콘(L)</h4>
+							</div>
+							<div class="price">6,500원</div>
+						</a>
+					</div>
+					<div class="menu-wrap">
+						<div class="menu-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>고소팝콘(L)</h3>
+								<h4>고소팝콘(L)</h4>
+							</div>
+							<div class="price">5,500원</div>
+						</a>
+					</div>
+					<div class="menu-wrap">
+						<div class="menu-img"></div>
+						<div class="menu-text">
+							<h3></h3>
+							<h4></h4>
+						</div>
+						<div class="price"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="container" id="beverage-container">
+			<h2>음료</h2>
+			<hr>
+			<div class="store-wrap">
+				<div class="menu-container">
+					<div class="menu-wrap">
+						<div class="menu-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>핑크레몬에이드</h3>
+								<h4>핑크레몬에이드 1</h4>
+							</div>
+							<div class="price">5,500원</div>
+						</a>
+					</div>
+					<div class="menu-wrap">
+						<div class="menu-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>에이드</h3>
+								<h4>에이드 1</h4>
+							</div>
+							<div class="price">5,500원</div>
+						</a>
+					</div>
+					<div class="menu-wrap">
+						<div class="menu-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>디카페인 콜드브루</h3>
+								<h4>디카페인 콜드브루 1</h4>
+							</div>
+							<div class="price">5,000원</div>
+						</a>
+					</div>
+				</div>
+				<div class="menu-container">
+					<div class="menu-wrap">
+						<div class="menu-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>아메리카노(ICE)</h3>
+								<h4>아메리카노(ICE) 1</h4>
+							</div>
+							<div class="price">4,500원</div>
+						</a>
+					</div>
+					<div class="menu-wrap">
+						<div class="menu-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>아메리카노(HOT)</h3>
+								<h4>아메리카노(HOT)</h4>
+							</div>
+							<div class="price">4,000원</div>
+						</a>
+					</div>
+					<div class="menu-wrap">
+						<div class="menu-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>탄산음료(L)</h3>
+								<h4>탄산음료(L)</h4>
+							</div>
+							<div class="price">3,500원</div>
+						</a>
+					</div>
+				</div>
+				<div class="menu-container">
+					<div class="menu-wrap">
+						<div class="menu-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>탄산음료(M)</h3>
+								<h4>탄산음료(M)</h4>
+							</div>
+							<div class="price">3,000원</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="container" id="snack-container">
+			<h2>스낵</h2>
+			<hr>
+			<div id="store-wrap">
+				<div class="menu-container">
+					<div class="menu-wrap">
+						<div class="menu-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>칠리치즈나쵸</h3>
+								<h4>칠리치즈나쵸</h4>
+							</div>
+							<div class="price">4,900원</div>
+						</a>
+					</div>
+					<div class="menu-wrap">
+						<div class="menu-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>플레인핫도그</h3>
+								<h4>플레인핫도그</h4>
+							</div>
+							<div class="price">4,500원</div>
+						</a>
+					</div>
+					<div class="menu-wrap">
+						<div class="menu-img">
+							<div class="pop-menu">
+								<div class="pop-circle" id="cart"></div>
+								<div class="pop-circle" id="present"></div>
+								<div class="pop-circle" id="buy"></div>
+							</div>
+						</div>
+						<a href="#">
+							<div class="menu-text">
+								<h3>칠리치즈핫도그</h3>
+								<h4>칠리치즈핫도그</h4>
+							</div>
+							<div class="price">5,000원</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+
+</html>

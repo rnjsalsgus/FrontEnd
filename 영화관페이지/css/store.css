@@ -1,0 +1,257 @@
+@font-face {
+	font-family:"Dancing Script";
+	src: url(../font/DancingScript-VariableFont_wght.ttf);
+}
+*{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-style-type:none;
+}
+a{
+	color:black;
+	text-decoration:none;
+}
+/* header */
+
+header{
+	width:100%;
+	height:80px;
+	display:flex;
+}
+#logo{
+	width:200px;
+	height:100px;
+	background-image:url("../img/cinema.png");
+	background-repeat:no-repeat;
+	background-size:200px 80px;
+	background-position:0px 10px;
+}
+#header-h1{
+	font-family: "Dancing Script";
+	font-size:50px;
+	height:80px;
+	line-height:80px;
+	margin:0 auto;
+	margin-top:10px;
+}
+#info{
+	width:200px;
+	height:80px;
+	display:flex;
+}
+.info-wrap{
+	width:100px;
+}
+.info-img{
+	width:40px;
+	height:40px;
+	margin:0 auto;
+	margin-top:20px;
+}
+#info-login-img{
+	background-image:url("../img/login.png");
+	background-repeat:no-repeat;
+	background-size: contain;
+}
+#info-join-img{
+	background-image:url("../img/join.png");
+	background-repeat:no-repeat;
+	background-size: contain;
+}
+.info-text{
+	font-size:14px;
+	margin-left:30px;
+}
+#join-text{
+	margin-left:25px;
+}
+
+
+/* nav */
+#main-nav{
+	width:100%;
+	height:60px;
+	margin:20px 0px;
+	margin-bottom:70px;
+	position:relative;
+	z-index:9;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.main{
+	width:60%;
+	min-width:650px;
+	height:60px;
+	display:flex;
+	justify-content:space-between;
+	line-height:60px;
+	margin:0 auto;
+}
+.main li{
+	width:100%;
+	margin:0 auto;
+	text-align: center;
+}
+.sub{
+	width:100%;
+	height:0;
+	overflow:hidden;
+	background-color:white;
+}
+.sub li{
+	height:40px;
+	line-height:40px;
+}
+.main:hover .sub{
+	height:170px;
+}
+
+.main li:hover .menu{
+	color:red;
+	font-weight:bold;
+}
+.sub>li:hover{
+	text-decoration:underline;
+	font-weight:bold;
+	background-color:#e9e5e5;
+}
+/* section */
+#store-container{
+	width:1000px;
+	margin:0 auto;
+	position:relative;
+	z-index:1;
+}
+.container{
+	position:absolute;
+}
+#store-h1{
+	font-size:2em;
+	padding:10px;
+}
+.store-border{
+	border:1px solid black;
+	margin-left:10px;
+}
+#store{
+	height:30px;
+	border-bottom:1px solid #ccc;
+	padding-bottom:10px;
+	margin-top:5px;
+	margin-left:10px;
+	margin-bottom:40px;
+}
+#store-menu{
+	width:400px;
+	display:flex;
+	justify-content:space-around;
+	text-align:center;
+	line-height:40px;
+	margin-bottom:0;
+	cursor:pointer;
+}
+#store-menu li{
+	width:100px;
+}
+.container h2{
+	padding:10px;
+}
+hr{
+	margin-left:10px;
+}
+.menu-container{
+	width:1000px;
+	display:flex;
+	justify-content:space-between;
+}
+.menu-wrap{
+	width:300px;
+	height:400px;
+	margin-top:40px;
+	margin-left:40px;
+}
+.menu-img{
+	height:300px;
+}
+.pop-menu{
+	width:100%;
+	height:300px;
+	background-color:rgba(0,0,0,0.2);
+	position:relative;
+	display:none;
+}
+.menu-wrap:hover .pop-menu{
+	display:block;
+}
+.pop-circle{
+	width:45px;
+	height:45px;
+	font-size:14px;
+	font-weight:bold;
+	color:white;
+	text-align:center;
+	background-color:rgba(0,0,0,0.5);
+	border-radius:50%;
+	position:absolute;
+	left:63.75px;
+	top:127.5px;
+	cursor:pointer;
+}
+#cart{
+	background-image:url(../img/cart.png);
+	background-repeat:no-repeat;
+	background-size:45px 45px;
+}
+#cart:hover{
+	background-image:url(../img/cart-text.png);
+}
+#present{
+	background-image:url(../img/present.png);
+	background-repeat:no-repeat;
+	background-size:45px 45px;
+	left:113.75px;
+}
+#present:hover{
+	background-image:url(../img/present-text.png);
+}
+#buy{
+	background-image:url(../img/buy.png);
+	background-repeat:no-repeat;
+	background-size:45px 45px;
+	left:163.75px;
+}
+#buy:hover{
+	background-image:url(../img/buy-text.png);
+}
+.menu-text{
+	height:60px;
+	margin-top:10px;
+}
+.menu-text:hover{
+	text-decoration:underline;
+}
+#combo-container .menu-text{
+	margin-left:40px;
+}
+.price{
+	font-weight:bold;
+	font-size:18px;
+	/* margin-left:70px; */
+}
+#combo-container .price{
+	margin-left:40px;
+}
+.store-wrap{
+	margin-bottom:20px;
+}
+#popcorn-container{
+	display:none;
+}
+#beverage-container{
+	display:none;
+}
+#snack-container{
+	display:none;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>join</title>
+	<link rel="stylesheet" href="../css/join.css">
+</head>
+<body>
+	<header>
+		<a href="index.html"><div id="logo"></div></a>
+		<h1 id="header-h1"><a href="index.html">CINEMA</a></h1>
+		<div id="info">
+			<a href="login.html">
+				<div class="info-wrap">
+					<div class="info-img" id="info-login-img"></div>
+					<span class="info-text">로그인</span>
+				</div>
+			</a>
+			<a href="join.html">
+				<div class="info-wrap">
+					<div class="info-img" id="info-join-img"></div>
+					<span id="join-text" class="info-text">회원가입</span>
+				</div>
+			</a>
+		</div>
+	</header>
+	<nav>
+		<ul class="main">
+			<li><a class="menu" href="reserve.html">예매</a>
+				<ul class="sub">
+					<li><a href="reserve.html">빠른 예매</a></li>
+					<li><a href="#">상영시간표</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="movie.html">영화</a>
+				<ul class="sub">
+					<li><a href="movie.html">홈</a></li>
+					<li><a href="#">현재 상영작</a></li>
+					<li><a href="#">상영 예정작</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="store.html">스토어</a>
+				<ul class="sub">
+					<li><a href="store.html">콤보</a></li>
+					<li><a href="#">팝콘</a></li>
+					<li><a href="#">음료</a></li>
+					<li><a href="#">스낵</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="notice.html">고객센터</a>
+				<ul class="sub">
+					<li><a href="notice.html">고객센터 메인</a></li>
+					<li><a href="QnA.html">자주찾는 질문</a></li>
+					<li><a href="rental.html">단체 관람/대관 문의</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<form>
+		<fieldset id="first-form">
+			<input type="text" placeholder="  아이디">
+			<input type="password" placeholder="  비밀번호">
+			<input type="text" placeholder="  [선택] 이메일주소 (비밀번호 찾기 등 본인 확인용)">
+		</fieldset>
+	</form>
+	<form>
+		<fieldset id="second-form">
+			<input class=input type="text" placeholder="  이름">
+			<input class=input type="text" placeholder="  생년월일 8자리">
+			<input  class=input type="text"placeholder="  통신사 선택">
+			<div id="info-container">
+				<div id="gender-wrap">
+					<div id="man">
+						<label><input type="radio" name="gender"><span class="gender-span">남자</span></label>
+					</div>
+					<label><input type="radio" name="gender"><span class="gender-span">여자</span></label>
+					<div id="woman">
+					</div>
+				</div>
+				<div id="foreigner-wrap">
+					<div id="non-foreigner">
+						<label><input type="radio" checked name="foreigner"><span class="for-span">내국인</span></label>
+					</div>
+					<div id="foreigner">
+						<label><input type="radio" name="foreigner"><span class="for-span">외국인</span></label>
+					</div>
+				</div>
+			</div>
+			
+			<input class="input" type="text" placeholder="  휴대전화번호">  
+		</fieldset>
+	</form>
+	<form id="third-form">
+		<div id="clause">
+			<input type="checkbox" id="check"><label for="check"><small>[필수]</small> 인증 약관 전체동의</label>
+		</div>
+	</form>
+	<div id="certified">
+		<span>인증요청</span>
+	</div>
+</body>
+</html>

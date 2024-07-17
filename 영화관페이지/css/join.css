@@ -1,0 +1,243 @@
+@font-face {
+	font-family:"Dancing Script";
+	src: url(../font/DancingScript-VariableFont_wght.ttf);
+}
+*{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-style-type:none;
+}
+a{
+	color:black;
+	text-decoration:none;
+}
+
+/* header */
+
+header{
+	width:100%;
+	height:80px;
+	display:flex;
+}
+#logo{
+	width:200px;
+	height:100px;
+	background-image:url("../img/cinema.png");
+	background-repeat:no-repeat;
+	background-size:200px 80px;
+	background-position:0px 10px;
+}
+#header-h1{
+	font-family: "Dancing Script";
+	font-size:50px;
+	height:80px;
+	line-height:80px;
+	margin:0 auto;
+	margin-top:10px;
+}
+
+#info{
+	width:200px;
+	height:80px;
+	display:flex;
+}
+.info-wrap{
+	width:100px;
+}
+.info-img{
+	width:40px;
+	height:40px;
+	margin:0 auto;
+	margin-top:20px;
+}
+#info-login-img{
+	background-image:url("../img/login.png");
+	background-repeat:no-repeat;
+	background-size: contain;
+}
+#info-join-img{
+	background-image:url("../img/join.png");
+	background-repeat:no-repeat;
+	background-size: contain;
+}
+.info-text{
+	font-size:14px;
+	margin-left:30px;
+}
+#join-text{
+	margin-left:25px;
+}
+/* nav */
+nav{
+	width:100%;
+	height:60px;
+	margin:20px 0px;
+	margin-bottom:70px;
+	position:relative;
+	z-index:9;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.main{
+	width:60%;
+	min-width:650px;
+	height:60px;
+	display:flex;
+	justify-content:space-between;
+	line-height:60px;
+	margin:0 auto;
+}
+.main li{
+	width:100%;
+	margin:0 auto;
+	text-align: center;
+}
+.sub{
+	width:100%;
+	height:0;
+	overflow:hidden;
+	background-color:white;
+}
+.sub li{
+	height:40px;
+	line-height:40px;
+}
+.main:hover .sub{
+	height:170px;
+}
+
+.main li:hover .menu{
+	color:red;
+	font-weight:bold;
+}
+.sub>li:hover{
+	text-decoration:underline;
+	font-weight:bold;
+	background-color:#e9e5e5;
+}
+#first-form{
+	width:500px;
+	border:1px solid #bbb;
+	border-radius:10px;
+	margin:0 auto;
+	margin-bottom:10px;
+}
+#first-form input{
+	border:none;
+	border-bottom:1px solid #ccc;
+	width:500px;
+	height:45px;
+	font-size:17px;
+	border-radius:10px;
+
+}
+#second-form{
+	width:500px;
+	margin:0 auto;
+	margin-bottom:10px;
+	border-radius:10px;
+	border:1px solid #bbb;
+}
+.input{
+	width:500px;
+	height:45px;
+	border:none;
+	border-radius:10px;
+	font-size:17px;	
+	border-bottom:1px solid #ccc;
+}
+#info-container{
+	width:500px;
+	height:45px;
+	border-bottom:1px solid #ccc;
+	display:flex;
+	justify-content:space-around;
+}
+#gender-wrap,#foreigner-wrap{
+	width:200px;
+	margin:5px;
+	display:flex;
+}
+#man{
+	width:99px;
+	height:35px;
+	text-align:center;
+	line-height:35px;
+}
+#woman{
+	width:99px;
+	height:35px;
+	text-align:center;
+	line-height:35px;
+}
+[type="radio"]{
+	display:none;
+}
+.gender-span{
+	width:98px;
+	height:33px;
+	border:1px solid #ccc;
+	border-radius:5px;
+	text-align:center;
+	line-height:35px;
+	float:left;
+	cursor:pointer;
+}
+
+[type="radio"]:checked+span{
+	border:2px solid green;
+}
+
+#non-foreigner{
+	width:99px;
+	height:35px;
+	text-align:center;
+	line-height:35px;
+}
+#foreigner{
+	height:35px;
+	text-align:center;
+	line-height:35px;
+}
+.for-span{
+	width:98px;
+	height:33px;
+	border:1px solid #ccc;
+	border-radius:5px;
+	text-align:center;
+	line-height:35px;
+	float:left;
+	cursor:pointer;
+}
+#third-form{
+	border:1px solid #bbb;
+	width:500px;
+	height:45px;
+	margin:0 auto;
+	border-radius:10px;
+	line-height:45px;
+	position:relative;
+	margin-bottom:20px;
+}
+#clause{
+	position:absolute;
+	left:20px;
+}
+#clause small{
+	margin-left:10px;
+}
+#certified{
+	width:500px;
+	height:45px;
+	background-color:#ccc;
+	margin:0 auto;
+	border-radius:10px;
+	color: white;
+	text-align:center;
+	line-height:45px;
+	font-weight:bold;
+	font-size:20px;
+	margin-bottom:20px;
+}

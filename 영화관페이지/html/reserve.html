@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>reservation</title>
+	<link rel="stylesheet" href="../css/reservation.css">
+</head>
+<body>
+	<header>
+		<a href="index.html"><div id="logo"></div></a>
+		<h1 id="header-h1"><a href="index.html">CINEMA</a></h1>
+		<div id="info">
+			<a href="login.html">
+				<div class="info-wrap">
+					<div class="info-img" id="info-login-img"></div>
+					<span class="info-text">로그인</span>
+				</div>
+			</a>
+			<a href="join.html">
+				<div class="info-wrap">
+					<div class="info-img" id="info-join-img"></div>
+					<span id="join-text" class="info-text">회원가입</span>
+				</div>
+			</a>
+		</div>
+	</header> 
+	<nav>
+		<ul class="main">
+			<li><a class="menu" href="reserve.html">예매</a>
+				<ul class="sub">
+					<li><a href="reserve.html">빠른 예매</a></li>
+					<li><a href="#">상영시간표</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="movie.html">영화</a>
+				<ul class="sub">
+					<li><a href="movie.html">홈</a></li>
+					<li><a href="#">현재 상영작</a></li>
+					<li><a href="#">상영 예정작</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="store.html">스토어</a>
+				<ul class="sub">
+					<li><a href="store.html">콤보</a></li>
+					<li><a href="#">팝콘</a></li>
+					<li><a href="#">음료</a></li>
+					<li><a href="#">스낵</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="notice.html">고객센터</a>
+				<ul class="sub">
+					<li><a href="notice.html">고객센터 메인</a></li>
+					<li><a href="#">자주찾는 질문</a></li>
+					<li><a href="#">단체 관람/대관 문의</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<div id="reserve-container">
+		<div id="theater">
+			<div class="name">영화관</div>
+			<ul class="main-locate">
+				<li class="locate"><a href="#">서울</a>
+					<ul class="sub-locate">
+						<li><a href="#">가산디지털</a></li>
+						<li><a href="#">가양</a></li>
+						<li><a href="#">강동</a></li>
+						<li><a href="#">건대입구</a></li>
+						<li><a href="#">김포공항</a></li>
+						<li><a href="#">노원</a></li>
+						<li><a href="#">도곡</a></li>
+						<li><a href="#">독산</a></li>
+						<li><a href="#">서울대입구</a></li>
+						<li><a href="#">수락산</a></li>
+						<li><a href="#">수유</a></li>
+						<li><a href="#">신대방</a></li>
+						<li><a href="#">신도림</a></li>
+						<li><a href="#">신림</a></li>
+						<li><a href="#">명동</a></li>
+						<li><a href="#">영등포</a></li>
+						<li><a href="#">용산</a></li>
+						<li><a href="#">합정</a></li>
+						<li><a href="#">홍대입구</a></li>
+					</ul>
+				</li>
+				<li class="locate"><a href="#">부산/경남/울산</a>
+					<ul class="sub-locate">
+						<li><a href="#">김해아울렛</a></li>
+						<li><a href="#">동래</a></li>
+						<li><a href="#">동부산아울렛</a></li>
+						<li><a href="#">마산</a></li>
+						<li><a href="#">부산명지</a></li>
+						<li><a href="#">부산본점</a></li>
+						<li><a href="#">부산장림</a></li>
+						<li><a href="#">부산사천</a></li>
+						<li><a href="#">서면(전포동)</a></li>
+						<li><a href="#">센텀시티</a></li>
+						<li><a href="#">부산대</a></li>
+						<li><a href="#">울산</a></li>
+						<li><a href="#">진주</a></li>
+						<li><a href="#">진해</a></li>
+						<li><a href="#">창원</a></li>
+					</ul>
+				</li>
+				<li class="locate"><a href="#">경기/인천</a>
+					<ul class="sub-locate">
+						<li><a href="#">광명</a></li>
+						<li><a href="#">광주터미널</a></li>
+						<li><a href="#">동탄</a></li>
+						<li><a href="#">라페스타</a></li>
+						<li><a href="#">마석</a></li>
+						<li><a href="#">별내</a></li>
+						<li><a href="#">부천</a></li>
+						<li><a href="#">부평</a></li>
+						<li><a href="#">송탄</a></li>
+						<li><a href="#">수원</a></li>
+						<li><a href="#">안산</a></li>
+						<li><a href="#">안양</a></li>
+					</ul>
+				</li>
+				<li class="locate"><a href="#">충청/대전</a>
+					<ul class="sub-locate">
+						<li><a href="#">대전</a></li>
+						<li><a href="#">서산</a></li>
+						<li><a href="#">아산터미널</a></li>
+						<li><a href="#">천안</a></li>
+						<li><a href="#">충주</a></li>
+					</ul>
+				</li>
+				<li class="locate"><a href="#">경북/대구</a>
+					<ul class="sub-locate">
+						<li><a href="#">경주</a></li>
+						<li><a href="#">구미</a></li>
+						<li><a href="#">대구</a></li>
+						<li><a href="#">동성로</a></li>
+						<li><a href="#">상주</a></li>
+						<li><a href="#">상인</a></li>
+						<li><a href="#">영주</a></li>
+						<li><a href="#">영천</a></li>
+						<li><a href="#">포항</a></li>
+					</ul>
+				</li>
+				<li class="locate"><a href="#">전라/광주</a>
+					<ul class="sub-locate">
+						<li><a href="#">광주</a></li>
+						<li><a href="#">군산</a></li>
+						<li><a href="#">수완</a></li>
+						<li><a href="#">익산</a></li>
+						<li><a href="#">전주</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="choose">
+			<div class="name">영화 선택</div>
+			<div class="movie-wrap">
+				<div class="grade grade-15"></div>
+				<div class="title">퓨리오사: 매드맥스 사가</div>
+			</div>
+			<div class="movie-wrap">
+				<div class="grade grade-15"></div>
+				<div class="title">범죄도시4</div>
+			</div>
+			<div class="movie-wrap">
+				<div class="grade grade-15"></div>
+				<div class="title">그녀가 죽었다</div>
+			</div>
+			<div class="movie-wrap">
+				<div class="grade grade-12"></div>
+				<div class="title">혹성탈출: 새로운 시대</div>
+			</div>
+			<div class="movie-wrap">
+				<div class="grade grade-15"></div>
+				<div class="title">설계자</div>
+			</div>
+			<div class="movie-wrap">
+				<div class="grade grade-15"></div>
+				<div class="title">드림 시나리오</div>
+			</div>
+			<div class="movie-wrap">
+				<div class="grade grade-12"></div>
+				<div class="title">분노의 강</div>
+			</div>
+			<div class="movie-wrap">
+				<div class="grade grade-all"></div>
+				<div class="title">창가의 토토</div>
+			</div>
+		</div>
+		<div id="date">
+			<div class="name">날짜선택</div>
+			<div id="date-wrap">
+				<input type="date">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

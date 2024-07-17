@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>movie</title>
+	<link rel="stylesheet" href="../css/movie.css">
+	<script src="../script/movie.js"></script>
+</head>
+<body>
+	<header>
+		<a href="index.html"><div id="logo"></div></a>
+		<h1 id="header-h1"><a href="index.html">CINEMA</a></h1>
+		<div id="info">
+			<a href="login.html">
+				<div class="info-wrap">
+					<div class="info-img" id="info-login-img"></div>
+					<span class="info-text">로그인</span>
+				</div>
+			</a>
+			<a href="join.html">
+				<div class="info-wrap">
+					<div class="info-img" id="info-join-img"></div>
+					<span id="join-text" class="info-text">회원가입</span>
+				</div>
+			</a>
+		</div>
+	</header> 
+	<nav>
+		<ul class="main">
+			<li><a class="menu" href="reserve.html">예매</a>
+				<ul class="sub">
+					<li><a href="reserve.html">빠른 예매</a></li>
+					<li><a href="#">상영시간표</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="movie.html">영화</a>
+				<ul class="sub">
+					<li><a href="movie.html">홈</a></li>
+					<li><a href="#">현재 상영작</a></li>
+					<li><a href="#">상영 예정작</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="store.html">스토어</a>
+				<ul class="sub">
+					<li><a href="store.html">콤보</a></li>
+					<li><a href="#">팝콘</a></li>
+					<li><a href="#">음료</a></li>
+					<li><a href="#">스낵</a></li>
+				</ul>
+			</li>
+			<li><a class="menu" href="notice.html">고객센터</a>
+				<ul class="sub">
+					<li><a href="notice.html">고객센터 메인</a></li>
+					<li><a href="QnA.html">자주찾는 질문</a></li>
+					<li><a href="rental.html">단체 관람/대관 문의</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<section id="gallery">
+		<div id="gallery-wrap">
+			<div id="prev">&lt;</div>
+			<ul id="inwrap">
+				<li class="inbox"></li>
+				<li class="inbox"></li>
+				<li class="inbox"></li>
+				<li class="inbox"></li>
+				<li class="inbox"></li>
+			</ul>
+			<div id="next">&gt;</div>
+		</div>
+	</section>
+	<section>
+		<div id="current-movie">
+			<h3>현재 상영작 <span>TOP 4</span></h3>
+			<div class="movie-container">
+				<div class="movie-wrap">
+					<div class="movie-img">
+						<div class="reserve">
+							<div class="reserve-box">예매하기</div>
+							<div class="reserve-box">상세보기</div>
+						</div>
+					</div>
+					<div class="movie-text">
+						<div class="grade grade-15"></div>
+						<div class="title">퓨리오사: 매드맥스 사가</div>
+						<div class="runtime">
+							<div class="time-img"></div>
+							<div class="minute">148분</div>
+						</div>
+					</div>
+				</div>
+				<div class="movie-wrap">
+					<div class="movie-img">
+						<div class="reserve">
+							<div class="reserve-box">예매하기</div>
+							<div class="reserve-box">상세보기</div>
+						</div>
+					</div>
+					<div class="movie-text">
+						<div class="grade grade-15"></div>
+						<div class="title">범죄도시4</div>
+						<div class="runtime">
+							<div class="time-img"></div>
+							<div class="minute">109분</div>
+						</div>
+					</div>
+				</div>
+				<div class="movie-wrap">
+					<div class="movie-img">
+						<div class="reserve">
+							<div class="reserve-box">예매하기</div>
+							<div class="reserve-box">상세보기</div>
+						</div>
+					</div>
+					<div class="movie-text">
+						<div class="grade grade-15"></div>
+						<div class="title">그녀가 죽었다</div>
+						<div class="runtime">
+							<div class="time-img"></div>
+							<div class="minute">102분</div>
+						</div>
+					</div>
+				</div>
+				<div class="movie-wrap">
+					<div class="movie-img">
+						<div class="reserve">
+							<div class="reserve-box">예매하기</div>
+							<div class="reserve-box">상세보기</div>
+						</div>
+					</div>
+					<div class="movie-text">
+						<div class="grade grade-12"></div>
+						<div class="title">혹성탈출: 새로운 시대</div>
+						<div class="runtime">
+							<div class="time-img"></div>
+							<div class="minute">145분</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div id="movie">
+			<h3>상영 예정작 <span>TOP 4</span></h3>
+			<div class="movie-container">
+				<div class="movie-wrap">
+					<div class="movie-img">
+						<div class="reserve">
+							<div class="reserve-box">예매하기</div>
+							<div class="reserve-box">상세보기</div>
+						</div>
+					</div>
+					<div class="movie-text">
+						<div class="grade grade-15"></div>
+						<div class="title">설계자</div>
+						<div class="runtime">
+							<div class="time-img"></div>
+							<div class="minute">99분</div>
+						</div>
+					</div>
+				</div>
+				<div class="movie-wrap">
+					<div class="movie-img">
+						<div class="reserve">
+							<div class="reserve-box">예매하기</div>
+							<div class="reserve-box">상세보기</div>
+						</div>
+					</div>
+					<div class="movie-text">
+						<div class="grade grade-15"></div>
+						<div class="title">드림 시나리오</div>
+						<div class="runtime">
+							<div class="time-img"></div>
+							<div class="minute">102분</div>
+						</div>
+					</div>
+				</div>
+				<div class="movie-wrap">
+					<div class="movie-img">
+						<div class="reserve">
+							<div class="reserve-box">예매하기</div>
+							<div class="reserve-box">상세보기</div>
+						</div>
+					</div>
+					<div class="movie-text">
+						<div class="grade grade-12"></div>
+						<div class="title">분노의 강</div>
+						<div class="runtime">
+							<div class="time-img"></div>
+							<div class="minute">86분</div>
+						</div>
+					</div>
+				</div>
+				<div class="movie-wrap">
+					<div class="movie-img">
+						<div class="reserve">
+							<div class="reserve-box">예매하기</div>
+							<div class="reserve-box">상세보기</div>
+						</div>
+					</div>
+					<div class="movie-text">
+						<div class="grade grade-all"></div>
+						<div class="title">창가의 토토</div>
+						<div class="runtime">
+							<div class="time-img"></div>
+							<div class="minute">113분</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="banner"></div>
+		</div>
+	</section>
+</body>
+</html>

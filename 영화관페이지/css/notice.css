@@ -1,0 +1,280 @@
+@font-face {
+	font-family:"Dancing Script";
+	src: url(../font/DancingScript-VariableFont_wght.ttf);
+}
+*{
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-style-type:none;
+}
+a{
+	color:black;
+	text-decoration:none;
+}
+
+/* header */
+
+header{
+	width:100%;
+	height:80px;
+	display:flex;
+}
+#logo{
+	width:200px;
+	height:100px;
+	background-image:url("../img/cinema.png");
+	background-repeat:no-repeat;
+	background-size:200px 80px;
+	background-position:0px 10px;
+}
+#header-h1{
+	font-family: "Dancing Script";
+	font-size:50px;
+	height:80px;
+	line-height:80px;
+	margin:0 auto;
+	margin-top:10px;
+}
+
+#info{
+	width:200px;
+	height:80px;
+	display:flex;
+}
+.info-wrap{
+	width:100px;
+}
+.info-img{
+	width:40px;
+	height:40px;
+	margin:0 auto;
+	margin-top:20px;
+
+}
+#info-login-img{
+	background-image:url("../img/login.png");
+	background-repeat:no-repeat;
+	background-size: contain;
+}
+#info-join-img{
+	background-image:url("../img/join.png");
+	background-repeat:no-repeat;
+	background-size: contain;
+}
+.info-text{
+	font-size:14px;
+	margin-left:30px;
+}
+#join-text{
+	margin-left:25px;
+}
+
+
+/* nav */
+nav{
+	width:100%;
+	height:60px;
+	margin:20px 0px;
+	margin-bottom:70px;
+	position:relative;
+	z-index:9;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.main{
+	width:60%;
+	min-width:650px;
+	height:60px;
+	display:flex;
+	justify-content:space-between;
+	line-height:60px;
+	margin:0 auto;
+}
+.main li{
+	width:100%;
+	margin:0 auto;
+	text-align: center;
+}
+.sub{
+	width:100%;
+	height:0;
+	overflow:hidden;
+	background-color:white;
+}
+.sub li{
+	height:40px;
+	line-height:40px;
+}
+.main:hover .sub{
+	height:170px;
+}
+
+.main li:hover .menu{
+	color:red;
+	font-weight:bold;
+}
+.sub>li:hover{
+	text-decoration:underline;
+	font-weight:bold;
+	background-color:#e9e5e5;
+}
+/* container */
+#container{
+	width:1200px;
+	margin:0 auto;
+}
+/* aside */
+aside{
+	float:left;
+	width:200px;
+	margin-right:20px;
+}
+#left-menu{
+	width:100%;
+	font-weight:bold;
+	text-align:center;
+}
+#left-menu li{
+	width:100%;
+	height:40px;
+	line-height:40px;
+}
+.left-img{
+	margin-top:20px;
+	width:100%;
+	height:400px;
+	background-image:url(../img/aside_banner.png);
+	background-repeat:no-repeat;
+	background-size:100% 400px;
+}
+#left-menu>li:hover{
+	background-color: #fb4357;
+}
+#left-menu>li:hover a{
+	color:white
+}
+#top_wrap{
+	width:843px;
+	float:left;
+	display:flex;
+}
+.main-menu{
+	width:210px;
+	height:270px;
+	text-align:center;
+	border-right:1px solid gainsboro
+}
+#quick-search{
+	background-color:#fb4357;
+	color:white;
+	font-weight:bold;
+}
+#quick-search p{
+	font-size:15px;
+}
+#quick-img{
+	background-image:url(../img/ico_search.png);
+	background-size:80px 80px;
+}
+.inquiry-img{
+	width:80px;
+	height:80px;
+	margin:0 auto;
+	margin-top:50px;
+	margin-bottom:30px;
+}
+.main-menu p{
+	font-size:14px;
+	margin-bottom:10px;
+}
+#quick-search input{
+	width:165px;
+	height:30px;
+}
+.inquiry{
+	width:80px;
+	padding:3px 0px;
+	font-size:12px;
+	color:white;
+	background-color: gray;
+	margin:0 auto;
+	border-radius:5px;
+	cursor:pointer;
+}
+#talk-img{
+	background-image:url(../img/ico_talk.png);
+	background-size:80px 80px;
+}
+#email-img{
+	background-image:url(../img/ico_email.png);
+	background-size:80px 80px;
+}
+#history-img{
+	background-image:url(../img/ico_myAdvice.png);
+	background-size:80px 80px;
+}
+#bottom-wrap{
+	float:left;
+	width:843px;
+	margin-top:30px;
+}
+.service-menu-wrap h4{
+	width:100%;
+	margin:10px 0px;
+	margin-left:5px;
+}
+.service-menu-wrap{
+	width:300px;
+	float:left;
+	display:flex;
+	flex-wrap:wrap;
+}
+.service-menu{
+	width:130px;
+	height:80px;
+	border:2px solid gray;
+	border-radius:5px;
+	position:relative;
+	margin:5px;
+	cursor:default;
+}
+.service-text{
+	font-size:13px;
+	position:absolute;
+	line-height:20px;
+	top:20px;
+	left:10px;
+}
+.arrow{
+	position:absolute;
+	top:25px;
+	right:10px;
+	cursor:pointer;
+}
+#news{
+	width: 523px;
+	float:left;
+	margin-left:20px;
+	cursor:default;
+}
+#news h4{
+	margin:10px 0px;
+}
+#notice-table{
+	width:523px;
+}
+.notice-text{
+	width:350px;
+	font-size:20px;
+	float:left;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.notice-date{
+	float:right;
+}
+.notice-text:hover a{
+	text-decoration:underline;
+}
