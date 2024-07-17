@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>chapter06-03</title>
+	<style>
+		/* 문단 스타일
+			조절하는 부분은 텍스트 정렬이나 들여쓰기, 줄 간격 등
+		*/
+		/* text-align속성 = 텍스트 정렬
+			속성 값 / 설명
+			start / 현재 텍스트 줄의 시작 위치에 맞춰 문단 정렬
+			end / 현재 텍스트 줄의 끝 위치에 맞춰 문단 정렬
+			left,right,center / 왼쪽, 오른쪽, 가운데 정렬
+			justify / 양쪽에 맞춰 문단 정렬
+		*/
+		#h01{
+			text-align: right;
+		}
+		#h02{
+			text-align: center;
+		}
+		/* text-indent속성 - 텍스트 들여쓰기
+			기본형
+			text-indent:<크기> | <백분율>
+			속성 값 / 설명
+			<크기> / 단위와 함게 들여 쓸 크기를 지정
+			 음수 값도 사용할 수 있다.
+			<백분율> / 부모 요소의 너비를 기준으로 상대적으로 크기를 지정
+		*/
+		#h03{
+			text-indent: 50px;
+		}
+		/* line-height 속성 - 줄 간격 조절하기
+			기본형
+			line-height:normal | <숫자> | <크기> | <백분율> | inherit
+			 숫자나 백분율로 지정했을 때는 글자 크기를 기준으로 지정
+			 예를 들어 글자크기를 12px로 지정했을 때 줄 간격을 2.0으로 했다면
+			 실제 줄 간격은 글자 크기의 2.0배인 24px가 되고 백분율도 동일하게
+			 계산
+		*/
+		#p01{
+			font-size:15px;
+			line-height: 50px;
+			line-height: 3.0;
+			line-height: 300%;
+		}
+	</style>
+</head>
+<body>
+	<p id="p01">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+	<h1 id="h03">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+	<h1 id="h02">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+	<h1 id="h01">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+</body>
+</html>

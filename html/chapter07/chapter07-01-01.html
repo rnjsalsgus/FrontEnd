@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>chpater</title>
+	<style>
+		/* background-image 속성 - 웹 요소에 배경 이미지 넣기
+			기본형
+			background-imgae:url("파일 경로")
+		*/
+		body{
+			background-image:url("images/bg-img.jpg");
+		}
+		/* background-repeat 속성 - 배경 이미지 반복 지정
+			배경이미지의 크기가 배경을 채우려는 요소보다 작을 경우, 기본적으로 
+			반복해 표시한다.
+			속성 값 / 설명
+			repeat / 브라우저 화면에 가득 찰 때까지 배경이미지를
+			 가로와 세로로 반복(기본값)
+			repeat-x / 브라우저 창 너미봐 같아질 때까지 배경 이미지를 
+			 가로로 반복
+			repeat-y / 브라우저 창 높이와 같아질 때까지 배경 이미지를
+			 세로로 반복
+			no-repeat / 배경이미지를 한 번만 표시하고 반복하지 않는다.
+		*/
+		body{
+			background-image:url("images/20200101173014369.jpg");
+			background-repeat: no-repeat;
+		}
+		/* background-size 속성 - 배경 이미지 크기 조절
+		 	속성 값 / 설명
+			auto / 원래 배경 이미지 크기만큼 표시된다.
+			contain / 요소안에 배경 이미지가 다 들어오도록 이미지를
+			 확대/축소 한다.
+			cover / 배경 이미지로 요소를 모두 덮도록 이미지를 확대/ 축소한다.
+			<크기 값> / 너비 값과 높이 값을 지정
+			 너비 값만 지정할 경우, 원래 배경이미지 크기를 기준으로 확대/축소
+			 비율을 자동으로 계산해 높이 값을 지정한다.
+			<백분율> / 배경 이미지가 들어갈 요소의 크기를 기준으로 백분율 값을
+			 지정하고 그 크기에도 맞도록 배경 이미지를 확대/축소 한다.
+		*/
+		.cd1{
+			width:400px;
+			height:200px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div id="d1" class="cd1"></div>
+</body>
+</html>

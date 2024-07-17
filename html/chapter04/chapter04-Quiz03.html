@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quiz03</title>
+</head>
+<body>
+	<form>
+		<fieldset style="width: 600px">
+			아이디:
+			<input type="text">
+			비밀번호
+			<input type="text">
+			<input type="submit" value="로그인">
+		</fieldset>
+	</form>
+
+	<h1>회원가입</h1>
+		<fieldset style="width:500px;">
+			<legend>로그인 정보</legend>
+				<form style="width: 400px; position: relative; right: 20px;">
+					<span style="text-align: right;">
+						<p>
+							아이디
+							<input type="text">
+						</p>
+						<p>
+							비밀번호
+							<input type="text">
+						</p>
+						<p>
+							비밀번호 확인
+						<input type="text">
+						</p>
+					</span>
+				</form>
+		</fieldset>
+
+		<fieldset style="width:500px;">
+			<legend>개인정보</legend>
+				<form style="width: 400px; position: relative; right: 20px;">
+					<span style="text-align: right;">
+						<p>
+							이름
+							<input type="text">
+						</p>
+						<p>
+							메일 주소
+							<input type="text">
+						</p>
+						<p>
+							연락처
+						<input type="text">
+						</p>
+						<p>
+							블로그/홈페이지
+						<input type="text">
+						</p>
+					</span>
+				</form>
+		</fieldset>
+	
+	
+		<fieldset style="width:500px">
+			<legend>등록 정보</legend>
+			<form style="margin-left: 50px;">
+				<p>
+					참여인원<small>(최대10명)</small>&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="text" value="1" size="3">
+				</p>
+				<p>
+					지원물품<small>(1인당 5개)</small>&nbsp;&nbsp;&nbsp;
+					<input type="text" value="1" size="3">
+				</p>
+				<p>
+					희망 단계<small>(하,중,상)</small>&nbsp;&nbsp;&nbsp;
+					<input type="range" value="1" size="3">
+				</p>
+			</form>
+		</fieldset>
+
+		<form>
+			<fieldset style="width:450px">
+				<legend>신청 과목</legend>
+				<p>
+					이 달에 신청할 과목을 선택하세요 (1과목만 가능)
+				</p>
+				<label><input type="radio" name="class">회화</label>
+				<label><input type="radio" name="class">문법</label>
+				<label><input type="radio" name="class">작문</label>
+			</fieldset>
+		</form>
+		
+		<form>
+			<fieldset style="width:450px">
+				<legend>메일링</legend>
+				<p>
+					메일로 받고 싶은 뉴스 주제를 선택해 주세요 (복수 선택 가능)
+				</p>
+				<label><input type="checkbox">해외 단신</label>
+				<label><input type="checkbox">5분 회화</label>
+				<label><input type="checkbox">모닝 팝스</label>
+			</fieldset>
+		</form>
+
+		<form>
+			<fieldset style="width: 500px;">
+				<legend>과 티셔츠 설문</legend>
+				<p>
+					올해 과 티(T)를 만들려고 합니다. 원하는 색상을 추천해 주세요.
+				</p>
+				선호색상<input type="color" value="#00ff00">
+			</fieldset>
+		</form>
+
+		<h2>조회기간 선택</h2>
+		<input type="date">
+		<input type="date">
+
+		<h2>메일링 리스트 등록</h2>
+		<form>
+			메일주소
+			<input type="text">
+			<input type="submit">
+			<input type="reset" value="다시입력">
+		</form>
+
+		<form>
+			<span>
+				아이디
+				<input type="text">
+				비밀번호
+				<input type="text">
+			</span>
+			<input type="image" src="images/login.jpg" width="70" style="position: relative; bottom:-10px;">
+		</form>
+		<br>
+		<input type="button" value="새 탭 열기">
+</body>
+</html>

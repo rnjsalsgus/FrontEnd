@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>chapter02-01</title>
+</head>
+<body>
+	<!-- 텍스트 관련 태그 -->
+	<!-- 텍스트를 블록으로 묶어 처리하는 태그 -->
+	<!-- 
+		<h1~6> 태그 - 제목 표시하기
+			제목 텍스트는 일반 텍스트보다 크고 진하게 표시
+			제목 크기에 따라 <h1>~<h6> 태그까지 사용
+			<h1>이 가장 크게 표시되고 <h6>이 가장 작게 표시
+	 -->
+	 <h1>제목(headline)1</h1>
+	 <h2>제목(headline)2</h2>
+	 <h3>제목(headline)3</h3>
+	 <h4>제목(headline)4</h4>
+	 <h5>제목(headline)5</h5>
+	 <h6>제목(headline)6</h6>
+
+	 <!-- 
+		<p> 태그 - 단락만들기
+			<p>태그로 표시하는 텍스트 단락은 </p>태그를 만날 때까지 줄바꿈없이
+			텍스트를 한 줄로 표시하는 텍스트 줄이 브라우저 창의 너비보다 길어질 경우,
+			줄이 자동으로 바뀐다.
+	  -->
+		<!-- lorem ipsum - 의미없는 문장이 자동생성되어 html을 첫 구성할 때 사용 -->
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde non laudantium voluptate nemo. Dolorum soluta quas illo iure voluptates perspiciatis totam. Provident, vel praesentium doloremque at sit voluptas soluta aliquam.</p>
+		<!-- <p>태그는 앞뒤에 줄바꿈이 자동으로 된다. -->
+
+		<!-- <br>태그 - 줄 바꿈 -->
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum similique cumque <br>ad soluta incidunt maiores optio quos libero perspiciatis,<br> minima temporibus modi dolor tempora reprehenderit a cum dolores nemo ab!</p>
+
+		<!-- <hr>태그 - 분위기 전환을 위한 수평 줄 넣기
+		닫는 태그가 없다. -->
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum similique cumque <hr>ad soluta incidunt maiores optio quos libero perspiciatis,<hr> minima temporibus modi dolor tempora reprehenderit a cum dolores nemo ab!</p>
+
+		<!-- <blockquote>태그 - 인용문 넣기
+			인용한 문장은 다른 텍스트보다 안으로 들여써진다.
+			cite 속성을 이용해 인용 사이트 주소를 표시할 수도 있다.
+		-->
+		<blockquote>인용 내용</blockquote>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsum repellat optio et iusto delectus,  <blockquote>expedita commodi</blockquote>soluta vero non, accusantium cumque omnis voluptate nesciunt quaerat assumenda exercitationem reprehenderit inventore.
+		</p>
+		 <!-- 줄바꿈이나 스페이스바를 아무리 입력해도 화면 그대로 출력되지 않는다. -->
+		 <!-- <pre></pre>태그 - 입력하는 그대로 화면에 표시된다. -->
+		 <pre>텍스트</pre>
+		 <pre>
+			function sayHello(){
+				console.log("Hello world!")
+			}
+			sayHello();
+		 </pre>
+
+		 
+	</body>
+</html>

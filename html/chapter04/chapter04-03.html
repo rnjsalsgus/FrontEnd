@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>chapter04-03</title>
+</head>
+<body>
+	<!-- <input>태그의 다양한 속성-->
+	<!-- autofocus속성 - 입력 커서 표시하기
+		페이지를 불러오자마자 폼의 요소 중에서 원하는 요소에 마우스 커서를
+		표시할 수 있다.
+	-->
+	<form>
+		<input type="text">
+		<br>
+		<input type="text" autofocus>
+		<br>
+		<input type="text">
+		<br>
+	</form>
+	<!-- placeholder 속성 - 힌트 표시하기-->
+	<input type="text" placeholder="검색어를 입력하세요">
+	<br>
+	<!-- readonly 속성 - 읽기 전용 필드 만들기
+		사용자가 입력하지 못하게 읽게만 만들 수 있는 속성	
+	-->
+	<input type="text" value="닉네임" readonly>
+	<br>
+	<!-- min,max,step 속성
+		min - 최소값
+		max - 최대값
+		step - 허용된 범위 내의 숫자의 일정한 간격을 가리킨다.
+		짝수만 입력 가능
+	-->
+	<input type="number" min="2" step="2">
+	<br>
+	<!-- size,minlength,maxlength속성 - 길이, 최소길이, 최대길이
+		최대 길이 속성
+		size - 보여주는 문자의 길이
+		비밀번호 최소 8자이상 18자 이하로만 입력이 가능한 필드
+	-->
+	<input type="password" minlength="8" maxlength="18">
+	<input type="submit">
+	<br>
+
+	
+</body>
+</html>
